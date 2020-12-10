@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    background-color: #06719C;
+    color: white;
+}
+
+h2 {
+    padding: 10px;
+}
+
+
+p {
+    padding: 10px;
+}
+
+table {
+    background-color: #06719C;
+    color: white; 
+    margin: 15px 0;
+}
+
+th {
+    border:  2px solid  #2B2C2E;
+}
+
+td {
+    border: 2px solid  #2B2C2E;
+    padding: 5px;
+    font-size: .85;
+    text-align: left;
+    vertical-align: top;
+}
+
+img {
+    width: 100%;
+}
+
+main ul {
+    list-style: square;
+    padding: 0 50px;
+}
