@@ -2,8 +2,12 @@
     grid-area: wear-information;
 }
 
-.wear-images {
+.wear-image {
     grid-area: wear-pictures;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 h1 {
@@ -48,8 +52,31 @@ td {
     font-weight: 600;
 }
 
-img {
+
+#face {
     width: 100%;
+    margin: 0 0 150px 0;
+}
+
+#mask {
+    width: 75%;
+    position: absolute;
+    top: 500%;
+}
+
+.slide-mask {
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    from {
+        top: 500%
+    }
+    to {
+        top: 475%;
+    }
 }
 
 main ul {
@@ -78,6 +105,23 @@ main {
             "wear-title wear-title"
             "wear-information wear-pictures"
     }
+
+    .wear-image {
+        width: 40vw;
+        padding: 0 100px;
+    }
     
+
+    #face {
+        width: 500px;
+        position: relative;
+        
+    }
+
+    #mask {
+        width: 300px;
+
+
+    }
 
 }
