@@ -1,20 +1,29 @@
 /*Mobile and Global*/
-
-h1{
-    text-align: center;
-}
-
-h2, h3, h4 {
-    margin: 10px 0;
-}
-
-#main-title {
-    font-size: 1em;
-    font-weight: 800;
+#introduction {
     display: block;
     width: 100%;
     grid-area: three-ws;
     padding:  10px;
+}
+
+#introduction h1{
+    text-align: center;
+    font-size: .95em;
+    font-weight: 800;
+}
+
+#introduction p {
+    font-size: .75em;
+    font-weight: 500;
+}
+
+.information h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2, h3, h4 {
+    padding: 10px 0;
 }
 
 main ul {
@@ -30,15 +39,60 @@ main ul {
     width: 100%;
     height: auto;
     padding: 10px;
+    border: 5px solid #333638;
+    margin: 10px 0;
+}
+
+#wear-info {
+    background-color: #06719C;
+    color: white;
+    grid-area: wear-mask;
+}
+
+#wash-info {
+    grid-area: wash-hands;
+}
+
+#wait-info {
+    background-color: #06719C;
+    color: white;
+    grid-area: social-distance;
+}
+
+#info-info {
+    grid-area: more-facts;
+}
+
+#link-info {
+    background-color: #06719C;
+    color: white;
+    grid-area: covid-links;
+}
+
+#link-info li a {
+    color: white;
+}
+
+#link-info li:hover {
+    background-color: white;
+    color: #06719C;
+}
+
+#link-info li a:visited {
+    color: white;
 }
 
 
-
-
-
-@media screen-only and (max=width: 481px) {
-    #main-title {
+@media only screen and (min-width: 481px) {
+    #introduction h1 {
         font-size: 4em;
     }
+
+    #introduction p {
+        font-size: 1.5em;
+    }
+
+
+
 
 }
