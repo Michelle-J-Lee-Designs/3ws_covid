@@ -1,13 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*Mobile and Global*/
 
-body {
-    font-family: 'Poppins', sans-serif; 
+h1{
+    text-align: center;
+}
+
+h2, h3, h4 {
+    margin: 10px 0;
+}
+
+#main-title {
+    font-size: 1em;
+    font-weight: 800;
+    display: block;
+    width: 100%;
+    grid-area: three-ws;
+    padding:  10px;
+}
+
+main ul {
+    padding: 0 50px;
+    list-style: square;
+}
+
+#link-info ul {
+    list-style: none;
+}
+
+.information {
+    width: 100%;
+    height: auto;
+    padding: 10px;
 }
 
 
@@ -15,6 +37,8 @@ body {
 
 
 @media screen-only and (max=width: 481px) {
-
+    #main-title {
+        font-size: 4em;
+    }
 
 }
