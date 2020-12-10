@@ -8,7 +8,7 @@
 
 #introduction h1{
     text-align: center;
-    font-size: .95em;
+    font-size: 1.75em;
     font-weight: 800;
 }
 
@@ -21,6 +21,29 @@
     text-align: center;
     margin: 10px 0;
 }
+
+.white-link a {
+    color: white;
+}
+.white-link a h1:hover {
+    background-color: #2B2C2E;
+}
+
+.white-link a:visited {
+    color: white;
+}
+
+.black-link a {
+    color: black;
+}
+.black-link a h1:hover {
+    background-color: gray;
+}
+
+.black-link a:visited {
+    color: black;
+}
+
 
 h2, h3, h4 {
     padding: 10px 0;
@@ -73,13 +96,28 @@ main ul {
     color: white;
 }
 
-#link-info li:hover {
-    background-color: white;
-    color: #06719C;
+#link-info ul li a:hover {
+    background-color:#2B2C2E;
 }
 
 #link-info li a:visited {
     color: white;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+    justify-items: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "three-ws"
+        "wear-mask"
+        "wash-hands"
+        "social-distance"
+        "more-facts"
+        "covid-links"
+
 }
 
 
@@ -92,6 +130,15 @@ main ul {
         font-size: 1.5em;
     }
 
+    main {
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "three-ws three-ws three-ws"
+            "wear-mask wash-hands social-distance"
+            "more-facts more-facts covid-links"
+            "more-facts more-facts ."
+    }   
 
 
 

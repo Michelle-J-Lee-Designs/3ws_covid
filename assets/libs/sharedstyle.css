@@ -6,10 +6,17 @@
 
 body {
     font-family: 'Poppins', sans-serif; 
+    font-size: .95em;
 }
 
 footer {
     font-size: .5em;
     text-align: center;
     margin: 25px 0;
+}
+
+@media only screen and (min-width: 481px) {
+    body {
+        font-size: 1.25;
+    }
 }
