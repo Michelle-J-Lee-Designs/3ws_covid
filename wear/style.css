@@ -1,3 +1,20 @@
+main {
+    /* width: 100%; */
+    max-width: 1920px;
+    justify-items: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "wear-title"
+        "wear-information"
+        "wear-pictures"
+}
+
+main ul {
+    list-style: square;
+    padding: 0 50px;
+}
+
 .wear-facts {
     grid-area: wear-information;
 }
@@ -8,6 +25,30 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+
+#face {
+   
+}
+
+#mask {
+ 
+}
+
+.slide-mask {
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
 }
 
 h1 {
@@ -53,48 +94,8 @@ td {
 }
 
 
-#face {
-    width: 100%;
-    margin: 0 0 150px 0;
-}
 
-#mask {
-    width: 75%;
-    position: absolute;
-    top: 500%;
-}
 
-.slide-mask {
-    animation-name: slide-up;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes slide-up {
-    from {
-        top: 500%
-    }
-    to {
-        top: 475%;
-    }
-}
-
-main ul {
-    list-style: square;
-    padding: 0 50px;
-}
-
-main {
-    width: 100%;
-    max-width: 1920px;
-    justify-items: center;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-areas: 
-        "wear-title"
-        "wear-information"
-        "wear-pictures"
-}
 
 @media only screen and (min-width: 481px) {
     
@@ -103,25 +104,25 @@ main {
         grid-gap: 10px;
         grid-template-areas:
             "wear-title wear-title"
-            "wear-information wear-pictures"
+            "wear-information wear-pictures";
     }
 
     .wear-image {
+        background: blue;
+        position: relative;
         width: 40vw;
-        padding: 0 100px;
     }
-    
+
 
     #face {
-        width: 500px;
-        position: relative;
-        
+        max-width: 500px;
+        position: absolute;
+        top: 0;
     }
 
     #mask {
-        width: 300px;
-
-
+        max-width: 500px;
+        position: absolute;
+        top: 0;
     }
-
 }
