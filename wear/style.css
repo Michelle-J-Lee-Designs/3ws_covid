@@ -29,11 +29,12 @@ main ul {
 
 
 #face {
-   
+   max-width: 480px;
+   margin: 25px 0 0 0;
 }
 
 #mask {
- 
+ max-width: 480px;
 }
 
 .slide-mask {
@@ -44,10 +45,10 @@ main ul {
 
 @keyframes slide-up {
     from {
-        transform: translateY(100%);
+        transform: translateY(90%);
     }
     to {
-        transform: translateY(-100%);
+        transform: translateY(-85%);
     }
 }
 
@@ -108,7 +109,6 @@ td {
     }
 
     .wear-image {
-        background: blue;
         position: relative;
         width: 40vw;
     }
@@ -116,13 +116,14 @@ td {
 
     #face {
         max-width: 500px;
+        margin: 0;
         position: absolute;
         top: 0;
     }
 
     #mask {
-        max-width: 500px;
+        max-width: 450px;
         position: absolute;
-        top: 0;
+        top: 55%;
     }
 }
