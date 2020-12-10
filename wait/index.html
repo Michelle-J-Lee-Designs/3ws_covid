@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Bitter&subset=latin" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/libs/hamburgericonmenu.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="../assets/libs/hamburgericonmenu.js"></script>
     <script>scr="../assets/libs/jquery-3.5.1.min.js"</script>
     <title>Wait 6 Feet Apart</title>
 </head>
 <body>
     <header>
-        <nav id="ordering">
-            <ul>
-                <li id="home_link"><a href="../index.html">Back</a></li>
-                <li id="wear_link"><a href="../wear/index.html">Wear</a></li>
-                <li id="wash_link"><a href="../wash/index.html">Wash</a></A></li>
-                <li id="wait_link"><a href="#">Wait</a></li>   
-                <li id="info_link"><a href="../more_info/index.html">More Information</a></li>
-            </ul>
-        </nav>
+        <div id="hamburgericonmenuwrapper">
+            <div id="hamburgerui">
+                <ul>
+                <li><a href="#"><span id="navtoggler"></span></a></li>
+                </ul>
+            </div>          
+            <nav id="fullscreenmenu">
+                <ul>
+                    <li id="home_link"><a href="#">Home</a></li>    
+                    <li id="wear_link"><a href="wear/index.html">Wear</a></li>
+                    <li id="wash_link"><a href="wash/index.html">Wash</a></A></li>
+                    <li id="wait_link"><a href="wait/index.html">Wait</a></li>   
+                    <li id="info_link"><a href="more_info/index.html">More Information</a></li>
+                </ul>     
+            </nav>
+        </div>
     </header>
     <div class="wait-facts">
         <h1>Wait Six Feet Apart</h1>
