@@ -1,0 +1,71 @@
+#wait-facts {
+    grid-area: wait-information;
+    padding: 25px;
+}
+
+#wait-images {
+    grid-area: wait-pictures;
+    display: flex;
+}
+
+#wait-tips {
+    grid-area: tips-wait;
+}
+
+h1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #06719C;
+    color: white;
+    grid-area: wait-title;
+}
+
+h2 {
+    padding: 10px;
+}
+
+
+p {
+    padding: 10px;
+}
+
+
+img {
+    width: 100%;
+}
+
+main ul {
+    list-style: square;
+    padding: 0 50px;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+    justify-items: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "wait-title"
+        "wait-information"
+        "tips-wait"
+        "wait-pictures"
+}
+
+@media only screen and (min-width: 481px) {
+    
+    main {
+        grid-template-columns: .5fr, 1.5fr;
+        grid-gap: 25px;
+        grid-template-areas:
+            "wait-title wait-title"
+            "wait-information tips-wait"
+            "wait-pictures wait-pictures"
+
+    }
+    
+    img {
+        width: 50%;
+    }
+}

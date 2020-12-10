@@ -1,0 +1,60 @@
+.wash-facts {
+    grid-area: wash-information;
+}
+
+.wash-images {
+    grid-area: wash-pictures;
+}
+
+h1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #06719C;
+    color: white;
+    grid-area: wash-title;
+}
+
+h2 {
+    padding: 10px;
+}
+
+
+p {
+    padding: 10px;
+}
+
+
+img {
+    width: 100%;
+}
+
+main ul {
+    list-style: square;
+    padding: 0 50px;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+    justify-items: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "wash-title"
+        "wash-information"
+        "wash-pictures"
+}
+
+@media only screen and (min-width: 481px) {
+    
+    main {
+        grid-template-columns: 1fr, 2fr;
+        grid-gap: 10px;
+        grid-template-areas:
+            "wash-title wash-title"
+            "wash-pictures wash-information"
+    }
+    
+
+}

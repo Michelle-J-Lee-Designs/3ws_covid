@@ -1,7 +1,18 @@
+.wear-facts {
+    grid-area: wear-information;
+}
+
+.wear-images {
+    grid-area: wear-pictures;
+}
+
 h1 {
+    width: 100%;
+    display: block;
     text-align: center;
     background-color: #06719C;
     color: white;
+    grid-area: wear-title;
 }
 
 h2 {
@@ -25,10 +36,16 @@ th {
 
 td {
     border: 2px solid  #2B2C2E;
-    padding: 5px;
+    padding: 10px;
     font-size: .85;
     text-align: left;
     vertical-align: top;
+}
+
+.white-fill {
+    background-color: white;
+    color: #06719C;
+    font-weight: 600;
 }
 
 img {
@@ -38,4 +55,29 @@ img {
 main ul {
     list-style: square;
     padding: 0 50px;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+    justify-items: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "wear-title"
+        "wear-information"
+        "wear-pictures"
+}
+
+@media only screen and (min-width: 481px) {
+    
+    main {
+        grid-template-columns: 2fr, 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+            "wear-title wear-title"
+            "wear-information wear-pictures"
+    }
+    
+
 }
