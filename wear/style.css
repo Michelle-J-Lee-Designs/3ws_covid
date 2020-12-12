@@ -48,7 +48,22 @@ main ul {
         transform: translateY(90%);
     }
     to {
-        transform: translateY(-85%);
+        transform: translateY(-90%);
+    }
+}
+
+.slide-mask-down {
+    animation-name: slide-down;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translate(-85%);
+    }
+    to {
+        transform: translate(90%);
     }
 }
 
