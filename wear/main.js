@@ -1,18 +1,13 @@
-let slideMask = false;
+let maskSlide = false;
 
 $('#mask').click(function(){
-      
-  if('#mask') {
-    $(this).addClass("slide-mask");
-  }else {
-    $(this).addClass("slide-mask-down");
-  }
-    
-  slideMask = !slideMask;
-    })
+    if (maskSlide) { 
+      $('#mask').addClass("slide-mask");
+    }else {
+      $('#mask').addClass("slide-mask-down");
+    }
 
+    maskSlide = !maskSlide;
+  })
 
-//$('#mask').click(function(){
-//    $(this).addClass("slide-mask");
-//  })
 

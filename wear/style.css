@@ -45,17 +45,16 @@ main ul {
 
 @keyframes slide-up {
     from {
-        transform: translateY(90%);
+        transform: translateY(100%);
     }
     to {
-        transform: translateY(-90%);
+        transform: translateY(-100%);
     }
 }
 
-.slide-mask-down {
+/*.slide-mask-down {
     animation-name: slide-down;
     animation-duration: 2s;
-    animation-fill-mode: backwards;
 }
 
 @keyframes slide-down {
@@ -65,7 +64,7 @@ main ul {
     to {
         transform: translate(90%);
     }
-}
+}*/
 
 h1 {
     width: 100%;
@@ -133,7 +132,7 @@ td {
         max-width: 500px;
         margin: 0;
         position: absolute;
-        top: 0;
+        top: 100px;
     }
 
     #mask {
