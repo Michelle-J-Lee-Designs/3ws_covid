@@ -2,7 +2,7 @@ let slideMask = false;
 
 $('#mask').click(function(){
       
-  if('mask') {
+  if('#mask') {
     $(this).addClass("slide-mask");
   }else {
     $(this).addClass("slide-mask-down");
