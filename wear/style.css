@@ -55,12 +55,12 @@ main ul {
 .slide-mask-down {
     animation-name: slide-down;
     animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
 }
 
 @keyframes slide-down {
     from {
-        transform: translate(-85%);
+        transform: translate(-90%);
     }
     to {
         transform: translate(90%);
