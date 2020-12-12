@@ -52,20 +52,6 @@ main ul {
     }
 }
 
-/*.slide-mask-down {
-    animation-name: slide-down;
-    animation-duration: 2s;
-}
-
-@keyframes slide-down {
-    from {
-        transform: translate(-90%);
-    }
-    to {
-        transform: translate(90%);
-    }
-}*/
-
 h1 {
     width: 100%;
     display: block;
