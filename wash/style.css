@@ -7,7 +7,7 @@ main {
     grid-template-areas: 
         "wash-title"
         "wash-information"
-        "wash-pictures"
+        "pic-box"
 }
 
 main ul {     
@@ -32,6 +32,24 @@ p {
     padding: 10px;
 }
 
+#box {
+    grid-area: pic-box;
+    display: grid;
+    grid-template-areas: 
+        "click-here"
+        "wear-pictures"
+}
+
+#click {
+    background: #06719C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px 0;
+    grid-area: click-here;
+}
+
 .wash-facts {
     grid-area: wash-information;
 }
@@ -51,7 +69,8 @@ p {
 
 #spout {
     position: absolute;
-    bottom: -575px;
+    top: 1380px;
+    left: 10px
 }
 
 .turn-on-water {
@@ -90,7 +109,7 @@ p {
     
     #spout {
         min-width: 250px;
-        top: 110px;
+        top: 175px;
         left: 40px;
         z-index: 1;
     }

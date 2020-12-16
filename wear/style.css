@@ -7,7 +7,7 @@ main {
     grid-template-areas: 
         "wear-title"
         "wear-information"
-        "wear-pictures"
+        "pic-box"
 }
 
 main ul {
@@ -27,32 +27,49 @@ main ul {
     align-items: center;
 }
 
+#box {
+    grid-area: pic-box;
+    display: grid;
+    grid-template-areas: 
+        "click-here"
+        "wear-pictures"
+}
+
+#click {
+    background: #06719C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px 0;
+    grid-area: click-here;
+}
 
 #face {
-   max-width: 425px;
+   max-width: 325px;
    margin: 25px 0 0 0;
 }
 
 #mask {
-    max-width: 360px;
+    max-width: 300px;
     position: absolute;
-    bottom 0;
+    top: 1900px;
 }
 
 .slide-mask {
-    animation-name: slide-up;
+    animation-name: slider;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes slide-up {
+@keyframes slider {
     from {
-        transform: translateY(0);
+        transform: translateY(0%);
     }
     to {
-        transform: translateY(-20%);
+        transform: translateY(-100%);
     }
-}
+
 
 h1 {
     width: 100%;
@@ -90,11 +107,6 @@ td {
     vertical-align: top;
 }
 
-.white-fill {
-    background-color: white;
-    color: #06719C;
-    font-weight: 600;
-}
 
 
 
@@ -107,18 +119,18 @@ td {
         grid-gap: 10px;
         grid-template-areas:
             "wear-title wear-title"
-            "wear-information wear-pictures";
+            "wear-information pic-box"
     }
 
     
-    @keyframes slide-up {
+    /*@keyframes slider{
         from {
             transform: translateY(100);
         }
         to {
             transform: translateY(-72%);
         }
-    }
+    }*/
 
     h1 {
         font-size: 1.75em;
@@ -129,12 +141,15 @@ td {
         width: 40vw;
     }
 
+    #click {
+        font-size: 1.5em;
+    }
 
     #face {
         max-width: 500px;
         margin: 0;
         position: absolute;
-        top: 0;
+        top: 50px;
     }
 
     #mask {
