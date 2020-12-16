@@ -68,9 +68,10 @@ p {
 }
 
 #spout {
+    width: 150px;
     position: absolute;
-    top: 1380px;
-    left: 10px
+    top: 1350px;
+    left: 25px
 }
 
 .turn-on-water {
@@ -108,9 +109,9 @@ p {
     }
     
     #spout {
-        min-width: 250px;
-        top: 175px;
-        left: 40px;
+        min-width: 200px;
+        top: 150px;
+        left: 80px;
         z-index: 1;
     }
 
