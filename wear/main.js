@@ -1,5 +1,5 @@
-//$('#mask').click(function(){
- //   $('#mask').addClass("slide-mask");
-  //})
+$('#mask').click(function(){
+   $('#mask').addClass("slide-mask");
+})
 
 

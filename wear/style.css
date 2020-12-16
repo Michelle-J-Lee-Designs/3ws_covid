@@ -7,7 +7,7 @@ main {
     grid-template-areas: 
         "wear-title"
         "wear-information"
-        "pic-box"
+        "wear-picture"
 }
 
 main ul {
@@ -20,29 +20,11 @@ main ul {
 }
 
 .wear-image {
-    grid-area: wear-pictures;
+    grid-area: wear-picture;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-#box {
-    grid-area: pic-box;
-    display: grid;
-    grid-template-areas: 
-        "click-here"
-        "wear-pictures"
-}
-
-#click {
-    background: #06719C;
-    color: white;
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
-    padding: 5px 0;
-    grid-area: click-here;
 }
 
 #face {
@@ -54,22 +36,24 @@ main ul {
     max-width: 300px;
     position: absolute;
     top: 1900px;
-}
-
-.slide-mask {
     animation-name: slider;
-    animation-duration: 2s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-@keyframes slider {
-    from {
-        transform: translateY(0%);
+@keyframes slider{
+    0% {
+        transform: translateY(100);
     }
-    to {
-        transform: translateY(-100%);
+    50% {
+        transform: translateY(-45%);
     }
-
+    100% {
+        transform: translateY(100);
+    }
+}
 
 h1 {
     width: 100%;
@@ -93,7 +77,9 @@ table {
     background-color: #06719C;
     color: white; 
     margin: 15px 0;
+
 }
+
 
 th {
     border:  2px solid  #2B2C2E;
@@ -107,8 +93,11 @@ td {
     vertical-align: top;
 }
 
-
-
+.blue_table {
+    background-color: white;
+    color: #06719C;
+    font-weight: 600;
+}
 
 
 
@@ -119,18 +108,21 @@ td {
         grid-gap: 10px;
         grid-template-areas:
             "wear-title wear-title"
-            "wear-information pic-box"
+            "wear-information wear-picture"
     }
 
-    
-    /*@keyframes slider{
-        from {
+    @keyframes slider{
+        0% {
             transform: translateY(100);
         }
-        to {
-            transform: translateY(-72%);
+        50% {
+            transform: translateY(-80%);
         }
-    }*/
+        100% {
+            transform: translateY(100);
+        }
+    }
+
 
     h1 {
         font-size: 1.75em;
@@ -138,18 +130,13 @@ td {
 
     .wear-image {
         position: relative;
-        width: 40vw;
-    }
-
-    #click {
-        font-size: 1.5em;
     }
 
     #face {
         max-width: 500px;
         margin: 0;
-        position: absolute;
-        top: 50px;
+        /*position: absolute;
+        top: 50px;*/
     }
 
     #mask {
