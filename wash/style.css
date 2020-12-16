@@ -1,9 +1,18 @@
-.wash-facts {
-    grid-area: wash-information;
+main {
+    width: 100%;
+    max-width: 1920px;
+    justify-items: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "wash-title"
+        "wash-information"
+        "wash-pictures"
 }
 
-.wash-images {
-    grid-area: wash-pictures;
+main ul {     
+    list-style: square;
+    padding: 0 50px;
 }
 
 h1 {
@@ -19,42 +28,71 @@ h2 {
     padding: 10px;
 }
 
-
 p {
     padding: 10px;
 }
 
-
-img {
-    width: 100%;
+.wash-facts {
+    grid-area: wash-information;
 }
 
-main ul {
-    list-style: square;
-    padding: 0 50px;
+.wash-images {
+    grid-area: wash-pictures;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-main {
-    width: 100%;
-    max-width: 1920px;
-    justify-items: center;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-areas: 
-        "wash-title"
-        "wash-information"
-        "wash-pictures"
+#hands {
+    width: 400px;
+
 }
+
+#spout {
+    position: absolute;
+    bottom: -575px;
+}
+
+.turn-on-water {
+    animation-name: turn-on;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes turn-on {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+
 
 @media only screen and (min-width: 481px) {
-    
     main {
-        grid-template-columns: 1fr, 2fr;
+        grid-template-columns: 1fr, 1fr;
         grid-gap: 10px;
         grid-template-areas:
             "wash-title wash-title"
             "wash-pictures wash-information"
     }
+
+    #hands {
+        width: 700px;
+        position: relative;
+        top: 0px;
+        left: 0px
+    }
     
+    #spout {
+        min-width: 250px;
+        top: 110px;
+        left: 40px;
+        z-index: 1;
+    }
 
 }
