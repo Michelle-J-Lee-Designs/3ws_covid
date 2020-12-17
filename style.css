@@ -1,4 +1,21 @@
 /*Mobile and Global*/
+main {
+    width: 100%;
+    max-width: 1920px;
+    justify-items: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "three-ws"
+        "wear-mask"
+        "wash-hands"
+        "social-distance"
+        "threews-pic"
+        "more-facts"
+        "covid-links"
+
+}
+
 #introduction {
     display: block;
     width: 100%;
@@ -27,6 +44,7 @@
 }
 .white-link a h1:hover {
     background-color: #2B2C2E;
+    color: white;
 }
 
 .white-link a:visited {
@@ -37,7 +55,8 @@
     color: black;
 }
 .black-link a h1:hover {
-    background-color: gray;
+    background-color: #2B2C2E;
+    color: white;
 }
 
 .black-link a:visited {
@@ -62,7 +81,6 @@ main ul {
     width: 100%;
     height: auto;
     padding: 10px;
-    border: 5px solid #333638;
     margin: 10px 0;
 }
 
@@ -83,41 +101,31 @@ main ul {
 }
 
 #info-info {
+    background-color: #06719C;
+    color: white;
     grid-area: more-facts;
 }
 
 #link-info {
-    background-color: #06719C;
-    color: white;
     grid-area: covid-links;
 }
 
 #link-info li a {
-    color: white;
+    color: #2B2C2E;
 }
 
 #link-info ul li a:hover {
-    background-color:#2B2C2E;
-}
-
-#link-info li a:visited {
+    background-color: #2B2C2E;
     color: white;
 }
 
-main {
-    width: 100%;
-    max-width: 1920px;
-    justify-items: center;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-areas: 
-        "three-ws"
-        "wear-mask"
-        "wash-hands"
-        "social-distance"
-        "more-facts"
-        "covid-links"
+#link-info li a:visited {
+    color: #2B2C2E;
+}
 
+
+#group-pic {
+    grid-area: threews-pic;
 }
 
 
@@ -136,10 +144,17 @@ main {
         grid-template-areas: 
             "three-ws three-ws three-ws"
             "wear-mask wash-hands social-distance"
-            "more-facts more-facts covid-links"
-            "more-facts more-facts ."
+            "threews-pic more-facts covid-links"
     }   
 
+    .information {
+        width: 33vw; 
+    }
 
+    #group-pic {
+        padding: 0 50px;
+        max-width: 300px;
+        transform: scale(.5);
+    }
 
 }
