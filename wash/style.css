@@ -66,7 +66,7 @@ p {
 #spout {
     width: 150px;
     position: absolute;
-    left: 25px
+    left: 35px
 }
 
 .turn-on-water {
@@ -88,8 +88,8 @@ p {
 #spout-middle {
     width: 70px;
     position: absolute;
-    left: 65px;
-    top: 980px
+    left: 75px;
+    top: 185%;
 }
 
 @media only screen and (min-width: 481px) {

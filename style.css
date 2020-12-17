@@ -12,8 +12,8 @@ main {
         "social-distance"
         "threews-pic"
         "more-facts"
-        "covid-links"
-}
+        "covid-links"    
+    }
 
 h2, h3, h4 {
     padding: 10px 0;
@@ -28,20 +28,21 @@ main ul {
     display: block;
     width: 100%;
     grid-area: three-ws;
-    padding:  10px;
 }
 
 #introduction h1{
     background-color: #06719C;
     color: white;
     text-align: center;
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: 800;
+    padding: 10px 0;
 }
 
 #introduction p {
     font-size: .75em;
     font-weight: 500;
+    padding: 10px;
 }
 
 .information h1 {
@@ -132,11 +133,11 @@ main ul {
 
 @media only screen and (min-width: 481px) {
     #introduction h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     #introduction p {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 
     main {
