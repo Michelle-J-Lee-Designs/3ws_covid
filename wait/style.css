@@ -71,14 +71,21 @@ p {
     width: 25%;
 }
 
-.distance {
-    animation-name: slide-right;
+.moveAway {
+    animation-name: slide-down;
     animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
 
-@keyframes slide-right {
+.moveIn {
+    animation-name: slide-down;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear; 
+}
+
+@keyframes slide-down {
     from {
         transform: translate(0px);
     }
@@ -86,6 +93,15 @@ p {
         transform: translate(200px);
     }
 }
+
+/*@keyframes slide-back {
+    from {
+        transform: translate(200px);
+    }
+    to {
+        transform: translate(0px);
+    }
+}*/
 
 
 @media only screen and (min-width: 481px) {
@@ -110,7 +126,7 @@ p {
             transform: translate(0px);
         }
         to {
-            transform: translate(400px);
+            transform: translate(600px);
         }
     }
 }

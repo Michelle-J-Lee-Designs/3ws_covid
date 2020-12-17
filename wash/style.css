@@ -56,10 +56,6 @@ p {
 
 .wash-images {
     grid-area: wash-pictures;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 #hands {
@@ -70,23 +66,29 @@ p {
 #spout {
     width: 150px;
     position: absolute;
-    top: 1350px;
     left: 25px
+}
+
+#spout-middle {
+    width: 150px;
+    position: absolute;
+    left: 25px;
+    z-index: 1;
 }
 
 .turn-on-water {
     animation-name: turn-on;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
 
 @keyframes turn-on {
     from {
-        transform: rotate(0deg);
+        transform: rotate3d(0deg);
     }
     to {
-        transform: rotate(359deg)
+        transform: rotate3d(359deg)
     }
 }
 
