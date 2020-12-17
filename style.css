@@ -91,6 +91,7 @@ main ul {
 }
 
 #wash-info {
+    border: 5px solid #06719C;
     grid-area: wash-hands;
 }
 
