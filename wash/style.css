@@ -69,30 +69,28 @@ p {
     left: 25px
 }
 
-#spout-middle {
-    width: 150px;
-    position: absolute;
-    left: 25px;
-    z-index: 1;
-}
-
 .turn-on-water {
-    animation-name: turn-on;
+    animation-name: handle-turn;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
 
-@keyframes turn-on {
+@keyframes handle-turn {
     from {
-        transform: rotate3d(0deg);
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate3d(359deg)
+        transform: rotate(359deg);
     }
 }
 
-
+#spout-middle {
+    width: 70px;
+    position: absolute;
+    left: 65px;
+    top: 980px
+}
 
 @media only screen and (min-width: 481px) {
     main {
@@ -114,6 +112,13 @@ p {
         min-width: 200px;
         top: 150px;
         left: 65px;
+        z-index: 1;
+    }
+
+    #spout-middle {
+        width: 100px;
+        left: 115px;
+        top: 210px;
         z-index: 1;
     }
 
