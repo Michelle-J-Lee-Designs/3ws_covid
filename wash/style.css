@@ -101,6 +101,11 @@ p {
             "wash-pictures wash-information"
     }
 
+    p {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
     #hands {
         width: 650px;
         position: relative;
