@@ -6,8 +6,9 @@ main {
     grid-gap: 5px;
     grid-template-areas: 
         "wear-title"
-        "wear-information"
         "wear-picture"
+        "wear-information"
+        
 }
 
 main ul {
@@ -30,13 +31,13 @@ main ul {
 
 #face {
    max-width: 325px;
-   margin: 25px 0 0 0;
+   margin: 10px 0 0 0;
 }
 
 #mask {
     max-width: 300px;
     position: absolute;
-    top: 1900px;
+    top: 100px;
     animation-name: slider;
     animation-duration: 10s;
     animation-fill-mode: forwards;
@@ -49,10 +50,10 @@ main ul {
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-100%);
+        transform: translateY(-40%);
     }
     60% {
-        transform: translateY(-100%);
+        transform: translateY(-40%);
     }
     100% {
         transform: translateY(0);

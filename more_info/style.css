@@ -32,38 +32,52 @@ main {
     padding: 10px; 
 }
 
-main h2,h3 {
-    font-size: 1em;
-    font-weight: 800;
-    display: block;
-    background-color: rgba(255, 255, 255, .5);
-    padding: 0 10px;
+.box h3, p {
+    background-color:rgba(255, 255, 255, .3);
 }
 
-p {
+main h2 {
+    background-color: #06719C;
+    color: white;
+    font-size: 1.5em;
+    
+}
+
+main h3 {
+    font-size: 1em;
+
+}
+
+main p {
+    font-size: 18px;
     font-size: .85em;
-    font-weight: 500;
+    font-weight: 700;
     display: block;
-    background-color: rgba(255, 255, 255, .5);
     padding: 10px 30px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #06719C;
+    padding: 5px;
+    margin: 5px 0;
 }
 
 .box a {
     font-weight: 800;
-    display: block;
-    background-color: rgba(255, 255, 255, .5);
     padding: 0 10px;
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
 }
 
 .box a:hover {
-    background-color:#6694b3;
+    color:#06719C;
 }
 
-.box a:visited {
-    color: black;
-}
 
 #cdc {
     grid-area: cdc-box;

@@ -6,10 +6,10 @@ main {
     grid-gap: 5px;
     grid-template-areas: 
         "wait-title"
-        "wait-information"
-        "tips-wait"
         "click-here"
         "wait-pictures"
+        "wait-information"
+        "tips-wait"
 }
 
 main ul {
