@@ -169,7 +169,7 @@ button:hover {
     grid-area: pets-box;
     background-image: url(../assets/images/pets.jpg);
     background-repeat: none;
-    background-size: cover;
+    background-size: contain;
 }
 
 @media only screen and (min-width:481px) {
