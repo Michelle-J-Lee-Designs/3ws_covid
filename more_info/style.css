@@ -58,8 +58,8 @@ main p {
 button {
     border-radius: 10px;
     background-color: #06719C;
-    padding: 5px;
-    margin: 5px 0;
+    padding: 10px;
+    margin: 10px 25px;
 }
 
 .box a {
@@ -83,7 +83,7 @@ button:hover {
     background-image: url(../assets/images/cdc.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #symptoms {
@@ -91,15 +91,15 @@ button:hover {
     background-image: url(../assets/images/symptoms.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .25);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #testing {
     grid-area: test-box;
-    background-image: url(../assets/images/texting.jpg);
+    background-image: url(../assets/images/testing.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #vaccines {
@@ -107,7 +107,7 @@ button:hover {
     background-image: url(../assets/images/vaccine.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #spread {
@@ -115,7 +115,7 @@ button:hover {
     background-image: url(../assets/images/spread.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #sick {
@@ -123,7 +123,7 @@ button:hover {
     background-image: url(../assets/images/if_sick.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #risk {
@@ -131,15 +131,15 @@ button:hover {
     background-image: url(../assets/images/at_risk.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #daily {
     grid-area: daily-box;
-    background-image: url(../assets/images/daily2.jpg);
+    background-image: url(../assets/images/daily.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #travel {
@@ -147,7 +147,7 @@ button:hover {
     background-image: url(../assets/images/travel.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #kids {
@@ -155,7 +155,7 @@ button:hover {
     background-image: url(../assets/images/kids.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #stress {
@@ -163,7 +163,7 @@ button:hover {
     background-image: url(../assets/images/stress.jpg);
     background-repeat: none;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 #pets {
@@ -171,7 +171,7 @@ button:hover {
     background-image: url(../assets/images/pets.jpg);
     background-repeat: none;
     background-size: contain;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, .05);
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, .5);
 }
 
 @media only screen and (min-width:481px) {

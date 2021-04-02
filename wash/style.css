@@ -19,6 +19,7 @@ h1 {
     text-align: center;
     background-color: #06719C;
     color: white;
+    padding: 15px;
     grid-area: wash-title;
 }
 
