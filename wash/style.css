@@ -84,13 +84,6 @@ p {
     }
 }
 
-#spout-middle {
-    width: 70px;
-    position: absolute;
-    left: 75px;
-    top: 115px;
-}
-
 @media only screen and (min-width: 481px) {
     main {
         grid-template-columns: 1fr, 1fr;
@@ -116,13 +109,6 @@ p {
         min-width: 200px;
         top: 150px;
         left: 65px;
-        z-index: 1;
-    }
-
-    #spout-middle {
-        width: 100px;
-        left: 115px;
-        top: 210px;
         z-index: 1;
     }
 
