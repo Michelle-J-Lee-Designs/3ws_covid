@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 main {
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     max-width: 1920px;
     justify-items: center;
@@ -49,6 +50,7 @@ h1 {
 
 h2 {
     padding: 10px;
+
 }
 
 #click {
@@ -63,6 +65,7 @@ h2 {
 
 p {
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #figure-one {

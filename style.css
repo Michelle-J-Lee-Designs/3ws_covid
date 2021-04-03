@@ -2,6 +2,7 @@
 
 /*Mobile and Global*/
 main {
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     max-width: 1920px;
     justify-items: center;

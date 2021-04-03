@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 main {
+    font-family: 'Poppins', sans-serif;
     justify-items: center;
     display: grid;
     grid-gap: 5px;
