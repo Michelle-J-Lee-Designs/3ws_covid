@@ -83,12 +83,12 @@ p {
     animation-timing-function: linear;
 }
 
-/*.moveIn {
+.moveIn {
     animation-name: slide-down;
     animation-duration: 5s;
-    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
     animation-timing-function: linear; 
-}*/
+}
 
 @keyframes slide-down {
     from {
@@ -99,14 +99,14 @@ p {
     }
 }
 
-/*@keyframes slide-back {
+@keyframes slide-back {
     from {
         transform: translate(200px);
     }
     to {
         transform: translate(0px);
     }
-}*/
+}
 
 
 @media only screen and (min-width: 481px) {
