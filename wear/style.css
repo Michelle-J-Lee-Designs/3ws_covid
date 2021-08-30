@@ -53,10 +53,10 @@ main ul {
         transform: translateY(0);
     }
     40% {
-        transform: translateY(-40%);
+        transform: translateY(-35%);
     }
     60% {
-        transform: translateY(-40%);
+        transform: translateY(-35%);
     }
     100% {
         transform: translateY(0);
